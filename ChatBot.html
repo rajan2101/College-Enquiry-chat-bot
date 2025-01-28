@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Linking -->
+    <link rel="stylesheet" href="C.css">
+    <!-- Google font link -->
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- /Icon Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <!-- JavaScript Link -->
+    <script src="string.js" defer></script>
+    <script src="voice.js" defer></script>
+    <!-- /JavaScript Link -->
+    <title>Atharva Bot</title>
+</head>
+<body>
+  <header>
+    <div>
+      <nav>
+        <img src="ACHMCT.jpg" alt="header-image">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Admission</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+        <div>
+          <a href="#">Placement</a>
+          <button>Contact Us</button>
+        </div>
+      </nav>
+      
+      <div class="hero">
+        <!-- The video -->
+        <video autoplay muted loop id="myVideo">
+          <source src="ACE_VIdeo.mp4" type="video/mp4">
+        </video>
+
+        <button onclick="show()"><i class="fa-solid fa-message"></i></button>
+        <img src="Sunil_Rane.jpg" alt="Sunil Rane">
+        <br>
+        <h2>Hon. Shri Sunil Rane Sir (Founder)</h2>
+        <h4><b>Atharva is one of the fastest growing educational brands in India,</b><br>
+          The Atharva brand is synonymous with Excellence. Over the past decade, Brand Atharva has carved an important niche in the academic sector in the country
+        </h4>
+        <div class="nemade">
+          <img src="PRavin_NemADE.jpg" alt="Dr. Pravin Nemade">
+        </div>
+        <h3>Dr. Pravin Nemade (Director)</h3>
+        <h5>
+          Atharva is committed to delivering value-based education over a platform where academicians, industry, entrepreneurs, alumni, and students bridge the gap between industry and academics and foster the culture of research for the holistic development of an individual.
+        </h5>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="chat-container">
+      <div class="chat-header">
+        <img src="ACHMCT.jpg" alt="image" class="image">
+        <pre>Atharva Chat Bot</pre>
+        <h4>Online</h4>
+        <i class="fa-solid fa-circle"></i>
+      </div>  
+
+      <div class="chat-messages">
+        <div class="bot-message">
+          Hello👋 ! How can I assist you today?
+        </div>
+        <div class="user-message">
+          <!-- User messages will be displayed here -->
+        </div>
+      </div>
+
+      <div class="input-container">
+        <input type="text" id="user-input" placeholder="Your Prompt Here...">
+        <button id="send-button">Send</button>
+        <div class="mic">
+          <i onclick="voice()" class="fa-solid fa-microphone"></i>
+        </div>
+      </div>
+    </div> 
+  </main>
+</body>
+</html>
